@@ -1,14 +1,11 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=180&section=header&text=Gü&fontSize=45&fontColor=ffffff&animation=fadeIn" />
-</p>
+<img width="500" height="500" alt="Gemini_Generated_Image_73qui973qui973qu-removebg-preview (1)" src="https://github.com/user-attachments/assets/3f39b020-7a4d-4cdb-9ea6-e61d8c5bd21b" />
 
 <p align="center">
   <strong>Business Analyst • Developer • Automation Architect</strong><br>
   <em>„Efficiency is not an option – it's the baseline.“</em>
 </p>
 
-![github-contribution-grid-snake-dark](https://github.com/user-attachments/assets/319d86bd-90e8-4bf3-9f13-0f4136183610)![github-contribution-grid-snake-dark](https://github.com/user-attachments/assets/67a5e434-54b3-4be7-aa7f-eb6e8e39d797)<!-- Banner -->
-
+![github-contribution-grid-snake-dark](https://github.com/user-attachments/assets/319d86bd-90e8-4bf3-9f13-0f4136183610)
 ---
 
 ## 🧠 About Me
