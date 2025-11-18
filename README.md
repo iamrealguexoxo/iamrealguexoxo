@@ -24,7 +24,7 @@
 ---
 
 ## 🧠 About Me
-- 🔧 Business Analyst and Hobby Coder  
+- 🔧 Business Analyst and Coder
 - 🧩 Building AI-driven automation ecosystems (n8n, LLMs, Telegram Bots)  
 - 🚀 Passionate about Python, Swift, C++, Backend Automation & System Architecture  
 - ♻️ Creating workflows that eliminate repetitive human suffering (aka Bürokratie)  
