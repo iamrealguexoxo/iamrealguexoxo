@@ -25,7 +25,7 @@
 
 ## 🧠 About Me
 - 🔧 Business Analyst and Coder
-- 🧩 Building AI-driven automation ecosystems (n8n, LLMs, Telegram Bots)  
+- 🧩 Building AI-driven automation ecosystems (n8n, LLMs)  
 - 🚀 Passionate about Python, Swift, C++, Backend Automation & System Architecture  
 - ♻️ Creating workflows that eliminate repetitive human suffering (aka Bürokratie)  
 - 🎮 Gamer: Star Citizen, WoW  
