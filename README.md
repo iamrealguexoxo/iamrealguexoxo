@@ -3,6 +3,9 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=180&section=header&text=Gü&fontSize=45&fontColor=ffffff&animation=fadeIn" />
 </p>
 
+<img width="880" height="192" alt="image" src="https://github.com/user-attachments/assets/c009862d-435a-4c2a-a40d-9cbcb96de5a3" />
+
+
 <p align="center">
   <strong>Business Analyst • Developer • Automation Architect</strong><br>
   <em>„Efficiency is not an option – it's the baseline.“</em>
@@ -11,12 +14,12 @@
 ---
 
 ## 🧠 About Me
-- 🔧 Business Analyst @ XXXLutz Group  
+- 🔧 Business Analyst and Hobby Coder
 - 🧩 Building AI-driven automation ecosystems (n8n, LLMs, Telegram Bots)  
 - 🚀 Passionate about Python, Swift, C++, Backend Automation & System Architecture  
 - ♻️ Creating workflows that eliminate repetitive human suffering (aka Bürokratie)  
-- 🎮 Gamer: Star Citizen, WoW (Zandalari Troll), Tech-Freak seit Tag 1  
-- ♡ Fitness, Training, Fasten, Biohacking  
+- 🎮 Gamer: Star Citizen, WoW
+- ♡ Fitness, Training, Biohacking  
 
 ---
 
@@ -63,13 +66,7 @@
 
 ## 📬 Contact
 <p align="center">
-  <a href="https://github.com/DEIN_USERNAME"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/iamrealguexoxo"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="mailto:gue@beazzd.de"><img src="https://img.shields.io/badge/Email-8A2BE2?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
-
----
-
-<p align="center">
-  <em>„Jarvis online, Gü. Systeme laufen sauber. Was möchten Sie als Nächstes automatisieren?“</em>
 </p>
 
