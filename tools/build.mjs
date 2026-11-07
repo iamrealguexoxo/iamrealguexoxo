@@ -250,7 +250,7 @@ ${social ? '' : `<text class="hud mono" x="40" y="46">~/iamrealguexoxo <tspan cl
 <path class="spark" d="M549 99 L541 94 L545 87 L535 80"/>
 <path class="spark" d="M634 207 L643 211 L640 219 L650 224"/>
 <g transform="translate(${r2(tx)} 302) scale(${s})">${glyphs}</g>
-<text class="tag" x="600" y="360" text-anchor="middle">BUSINESS ANALYST · DEVELOPER · AUTOMATION ARCHITECT</text>
+<text class="tag" x="600" y="360" text-anchor="middle">SOFTWARE DEVELOPER · AUTOMATION · INDIE APPS</text>
 <text class="quote" x="600" y="392" text-anchor="middle">„Efficiency is not an option – it's the baseline.“</text>
 </g>
 ${social ? `<text class="foot mono" x="600" y="566" text-anchor="middle">github.com/iamrealguexoxo  ·  bygue.app</text>` : ''}
@@ -259,7 +259,7 @@ ${social ? `<text class="foot mono" x="600" y="566" text-anchor="middle">github.
   const staticCss = social
     ? `\n* { animation: none !important; }\n.bglow { opacity: .5; } .rglow { opacity: ${r2(t.glow * 0.5)}; }\n.foot { font-size: 17px; fill: ${t.muted}; letter-spacing: 1px; }`
     : ''
-  return card({ w: W, h: H, t, title: 'iamrealguexoxo – Business Analyst, Developer, Automation Architect', css: css + staticCss, body, rx: social ? 0 : 26, border: !social })
+  return card({ w: W, h: H, t, title: 'iamrealguexoxo – Software Developer', css: css + staticCss, body, rx: social ? 0 : 26, border: !social })
 }
 
 /** Das Logo allein (für Avatar, Favicon, Social-Preview): G-Ring mit Blitz, quadratisch */
@@ -529,10 +529,10 @@ function player(t) {
 <text class="eyebrow mono" x="228" y="76">PLAYER 1</text>
 <text class="name" x="226" y="124">Gü</text>
 <text class="handle mono" x="300" y="124">@iamrealguexoxo</text>
-<text class="cls" x="228" y="158"><tspan class="hi">Automation Architect</tspan>  ·  Guild: bygue  ·  Realm: Moon</text>
+<text class="cls" x="228" y="158"><tspan class="hi">Software Developer</tspan>  ·  Guild: bygue  ·  Realm: Moon</text>
 ${tagSvg}
 ${bars}`
-  return card({ w: W, h: H, t, title: 'Player card – Gü, Automation Architect', css, body })
+  return card({ w: W, h: H, t, title: 'Player card – Gü, Software Developer', css, body })
 }
 
 // ---------------------------------------------------------------- Kontakt-Knöpfe
@@ -558,10 +558,10 @@ ${icon}
 
 const files = []
 for (const [name, t] of Object.entries(THEMES)) {
-  files.push([`header-${name}.svg`, header(t)])
+  files.push([`banner-${name}.svg`, header(t)])
   files.push([`bygue-${name}.svg`, ecosystem(t)])
   files.push([`loadout-${name}.svg`, loadout(t)])
-  files.push([`player-${name}.svg`, player(t)])
+  files.push([`playercard-${name}.svg`, player(t)])
   files.push([`pill-web-${name}.svg`, pill(t, 'web')])
   files.push([`contact-mail-${name}.svg`, pill(t, 'mail')])
   files.push([`logo-${name}.svg`, logo(t, { withBg: false })])

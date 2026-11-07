@@ -1,14 +1,14 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-    <img alt="iamrealguexoxo – Business Analyst, Developer, Automation Architect" src="assets/header-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img alt="iamrealguexoxo – Software Developer" src="assets/banner-dark.svg" width="100%">
   </picture>
 </p>
 
 <p align="center">
   I turn repetitive human suffering <i>(aka Bürokratie)</i> into automations, and spare evenings into apps.<br>
-  Right now: shipping <a href="https://bygue.app"><b>bygue</b></a>, building LLM agents and making warehouse &amp; logistics systems a little smarter.
+  Right now: shipping <a href="https://bygue.app"><b>bygue</b></a> and building LLM agents.
 </p>
 
 <p align="center">
@@ -25,9 +25,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/player-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/player-light.svg">
-    <img alt="Player card – Gü, Automation Architect, plays World of Warcraft and Star Citizen" src="assets/player-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/playercard-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/playercard-light.svg">
+    <img alt="Player card – Gü, Software Developer, plays World of Warcraft and Star Citizen" src="assets/playercard-dark.svg" width="100%">
   </picture>
 </p>
 
