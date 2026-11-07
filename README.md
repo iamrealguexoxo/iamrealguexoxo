@@ -42,5 +42,5 @@
 <p align="center">
   <a href="https://bygue.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-web-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pill-web-light.svg"><img alt="bygue.app" src="assets/pill-web-dark.svg" height="48"></picture></a>
   &nbsp;
-  <a href="mailto:github@bygue.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pill-mail-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pill-mail-light.svg"><img alt="github@bygue.app" src="assets/pill-mail-dark.svg" height="48"></picture></a>
+  <a href="mailto:github@bygue.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-mail-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/contact-mail-light.svg"><img alt="github@bygue.app" src="assets/contact-mail-dark.svg" height="48"></picture></a>
 </p>

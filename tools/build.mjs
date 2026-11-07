@@ -557,7 +557,7 @@ for (const [name, t] of Object.entries(THEMES)) {
   files.push([`loadout-${name}.svg`, loadout(t)])
   files.push([`player-${name}.svg`, player(t)])
   files.push([`pill-web-${name}.svg`, pill(t, 'web')])
-  files.push([`pill-mail-${name}.svg`, pill(t, 'mail')])
+  files.push([`contact-mail-${name}.svg`, pill(t, 'mail')])
   files.push([`logo-${name}.svg`, logo(t, { withBg: false })])
   files.push([`logo-${name}-tile.svg`, logo(t, { withBg: true })])
 }
