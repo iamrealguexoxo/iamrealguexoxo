@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="520 70 160 160" width="512" height="512" role="img" aria-label="iamrealguexoxo logo">
+<defs>
+  <linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="545" y1="92" x2="662" y2="208"><stop offset="0" stop-color="#5ee7ff"/><stop offset="1" stop-color="#a970ff"/></linearGradient>
+  <filter id="blur" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+
+<path d="M645.96 111.43 A60 60 0 1 0 660 150 L628 150" fill="none" stroke="url(#grad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M603.6 110.4 L576 153.6 L592.8 153.6 L584.4 190.8 L612 145.2 L595.2 145.2 Z" fill="#5ee7ff" opacity="0.5599999999999999" filter="url(#blur)"/>
+<path d="M603.6 110.4 L576 153.6 L592.8 153.6 L584.4 190.8 L612 145.2 L595.2 145.2 Z" fill="#ffffff"/>
+</svg>

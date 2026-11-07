@@ -1,83 +1,64 @@
-<div style="font-size:10px">
-
 <p align="center">
-  <img 
-    width="448" 
-    height="234" 
-    src="https://github.com/user-attachments/assets/28dcee30-f30e-44f4-a7e2-bcb61e10e470" 
-    alt="unnamed"
-  />
-</p>
-
-<p align="center" style="font-size:10px;">
-  <strong>Business Analyst • Developer • Automation Architect</strong><br>
-  <em>„Efficiency is not an option – it's the baseline.“</em>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+    <img alt="iamrealguexoxo – Business Analyst, Developer, Automation Architect" src="assets/header-dark.svg" width="100%">
+  </picture>
 </p>
 
 <p align="center">
-  <img 
-    src="https://github.com/user-attachments/assets/319d86bd-90e8-4bf3-9f13-0f4136183610" 
-    alt="github-contribution-grid-snake-dark"
-  />
+  I turn repetitive human suffering <i>(aka Bürokratie)</i> into automations, and spare evenings into apps.<br>
+  Right now: shipping <a href="https://bygue.app"><b>bygue</b></a>, building LLM agents and making warehouse &amp; logistics systems a little smarter.
 </p>
 
----
-
-## 🧠 About Me
-- 🔧 Business Analyst and Coder
-- 🧩 Building AI-driven automation ecosystems (n8n, LLMs)  
-- 🚀 Passionate about Python, Swift, C++, Backend Automation & System Architecture  
-- ♻️ Creating workflows that eliminate repetitive human suffering (aka Bürokratie)  
-- 🎮 Gamer: Star Citizen, WoW  
-- ♡ Fitness, Training, Biohacking  
-
----
-
-## 🛠 Tech Stack
-
-### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### Tools & Systems
-![n8n](https://img.shields.io/badge/n8n-A431F3?style=for-the-badge&logo=n8n&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Telegram Bot](https://img.shields.io/badge/Telegram_Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
----
-
-## 📊 GitHub Stats
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=iamrealguexoxo&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamrealguexoxo&layout=compact&theme=tokyonight&hide_border=true" />
+  <a href="https://bygue.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/bygue-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/bygue-light.svg">
+      <img alt="bygue – socializeME, Thankful, FastLane, Questline, Peptide Tracker, Manifest., urlaubmaXXing, maXXteam, Starlane, FoodLane, ChatSafe" src="assets/bygue-dark.svg" width="100%">
+    </picture>
+  </a>
 </p>
 
----
-
-## 🔥 Contribution Graph
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamrealguexoxo&theme=react-dark&hide_border=true&area=true" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/loadout-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/loadout-light.svg">
+    <img alt="Loadout – TypeScript, Swift, Python, C++, JavaScript, React, Capacitor, Electron, Cloudflare Workers, n8n, LLM agents, Docker and more" src="assets/loadout-dark.svg" width="100%">
+  </picture>
 </p>
 
----
-
-## ⚡ Current Focus
-- Automating everything that can be automated  
-- Building LLM-based agents
-- Expanding my AI ecosystem with custom workflows  
-- Developing clever solutions for warehouse & logistics systems  
-
----
-
-## 📬 Contact
 <p align="center">
-  <a href="https://github.com/iamrealguexoxo"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="mailto:github@beazzd.de"><img src="https://img.shields.io/badge/Email-8A2BE2?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/player-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/player-light.svg">
+    <img alt="Player card – Gü, Automation Architect, plays World of Warcraft and Star Citizen" src="assets/player-dark.svg" width="100%">
+  </picture>
 </p>
 
-</div>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iamrealguexoxo/iamrealguexoxo/output/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iamrealguexoxo/iamrealguexoxo/output/snake-light.svg">
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/iamrealguexoxo/iamrealguexoxo/output/snake-dark.svg" width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://bygue.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/pill-web-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/pill-web-light.svg">
+      <img alt="bygue.app" src="assets/pill-web-dark.svg" height="48">
+    </picture>
+  </a>
+  &nbsp;
+  <a href="mailto:github@beazzd.de">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/pill-mail-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/pill-mail-light.svg">
+      <img alt="github@beazzd.de" src="assets/pill-mail-dark.svg" height="48">
+    </picture>
+  </a>
+</p>
