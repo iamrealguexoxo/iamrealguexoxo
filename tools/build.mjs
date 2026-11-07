@@ -532,7 +532,7 @@ ${bars}`
 // ---------------------------------------------------------------- Kontakt-Knöpfe
 
 function pill(t, kind) {
-  const text = kind === 'web' ? 'bygue.app' : 'github@beazzd.de'
+  const text = kind === 'web' ? 'bygue.app' : 'github@bygue.app'
   const w = Math.round(70 + text.length * 9.6 + 26)
   const h = 56
   const icon =
