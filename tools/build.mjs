@@ -48,7 +48,7 @@ function rng(seed) {
 const REDUCED = `@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }`
 
 /** Gemeinsame Karte: abgerundeter „Bildschirm“ mit Punktraster, Inhalt wird auf die Karte zugeschnitten */
-function card({ w, h, t, title, css, body, flat = false }) {
+function card({ w, h, t, title, css, body, flat = false, rx = 26, border = true }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-labelledby="ttl">
 <title id="ttl">${esc(title)}</title>
 <style>
@@ -60,16 +60,16 @@ ${REDUCED}
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${flat ? t.bg0 : t.bg1}"/><stop offset="1" stop-color="${t.bg0}"/></linearGradient>
   <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="${t.grid}" fill-opacity="${t.gridOp}"/></pattern>
-  <clipPath id="clip"><rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="26"/></clipPath>
+  <clipPath id="clip"><rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="${rx}"/></clipPath>
   <filter id="blur" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7"/></filter>
   <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.6"/></filter>
 </defs>
-<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="26" fill="url(#bg)"/>
+<rect x="${rx ? 1 : 0}" y="${rx ? 1 : 0}" width="${rx ? w - 2 : w}" height="${rx ? h - 2 : h}" rx="${rx}" fill="url(#bg)"/>
 <g clip-path="url(#clip)">
 <rect width="${w}" height="${h}" fill="url(#dots)"/>
 ${body}
 </g>
-<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="26" fill="none" stroke="${t.border}" stroke-width="1.5"/>
+${border ? `<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="${rx}" fill="none" stroke="${t.border}" stroke-width="1.5"/>` : ''}
 </svg>
 `
 }
@@ -97,9 +97,9 @@ const RING = 'M645.96 111.43 A60 60 0 1 0 660 150 L628 150'
 const BOLT = 'M603.6 110.4 L576 153.6 L592.8 153.6 L584.4 190.8 L612 145.2 L595.2 145.2 Z'
 const STRIKE = 'M620 -8 L606 16 L615 27 L598 50 L610 63 L596 86 L603.6 110.4'
 
-function header(t) {
+function header(t, { social = false } = {}) {
   const W = 1200
-  const H = 440
+  const H = social ? 600 : 440
   const rand = rng(11)
 
   // Hintergrund-Netz links und rechts (verteilt über ein Raster mit Zufallsversatz)
@@ -223,15 +223,16 @@ function header(t) {
   const body = `
 <defs>
   <linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="545" y1="92" x2="662" y2="208"><stop offset="0" stop-color="${t.cyan}"/><stop offset="1" stop-color="${t.violet}"/></linearGradient>
-  <radialGradient id="aura" cx="600" cy="160" r="360" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${t.violet}" stop-opacity=".16"/><stop offset=".55" stop-color="${t.cyan}" stop-opacity=".05"/><stop offset="1" stop-color="${t.cyan}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="aura" cx="600" cy="${160 + (social ? 80 : 0)}" r="360" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${t.violet}" stop-opacity=".16"/><stop offset=".55" stop-color="${t.cyan}" stop-opacity=".05"/><stop offset="1" stop-color="${t.cyan}" stop-opacity="0"/></radialGradient>
 </defs>
 <rect width="${W}" height="${H}" fill="url(#aura)"/>
+<g transform="translate(0 ${social ? 80 : 0})">
 <g class="net">${lines}${dots}</g>
 <path class="feed" d="M321 150 L534 150"/>
 <path class="feed" d="M879 150 L666 150"/>
-<text class="hud mono" x="40" y="46">~/iamrealguexoxo <tspan class="acc">›</tspan> ./boot --thunder</text>
+${social ? '' : `<text class="hud mono" x="40" y="46">~/iamrealguexoxo <tspan class="acc">›</tspan> ./boot --thunder</text>
 <circle class="livering" cx="1104" cy="41" r="4.5"/><circle class="live" cx="1104" cy="41" r="4.5"/>
-<text class="hud mono" x="1116" y="46">online</text>
+<text class="hud mono" x="1116" y="46">online</text>`}
 <path class="leader" d="${STRIKE}"/>
 <g class="strike">
   <path class="sbg" d="${STRIKE}" pathLength="1" filter="url(#blur)"/>
@@ -251,9 +252,14 @@ function header(t) {
 <g transform="translate(${r2(tx)} 302) scale(${s})">${glyphs}</g>
 <text class="tag" x="600" y="360" text-anchor="middle">BUSINESS ANALYST · DEVELOPER · AUTOMATION ARCHITECT</text>
 <text class="quote" x="600" y="392" text-anchor="middle">„Efficiency is not an option – it's the baseline.“</text>
+</g>
+${social ? `<text class="foot mono" x="600" y="566" text-anchor="middle">github.com/iamrealguexoxo  ·  bygue.app</text>` : ''}
 <rect class="flash" width="${W}" height="${H}"/>`
 
-  return card({ w: W, h: H, t, title: 'iamrealguexoxo – Business Analyst, Developer, Automation Architect', css, body })
+  const staticCss = social
+    ? `\n* { animation: none !important; }\n.bglow { opacity: .5; } .rglow { opacity: ${r2(t.glow * 0.5)}; }\n.foot { font-size: 17px; fill: ${t.muted}; letter-spacing: 1px; }`
+    : ''
+  return card({ w: W, h: H, t, title: 'iamrealguexoxo – Business Analyst, Developer, Automation Architect', css: css + staticCss, body, rx: social ? 0 : 26, border: !social })
 }
 
 /** Das Logo allein (für Avatar, Favicon, Social-Preview): G-Ring mit Blitz, quadratisch */
@@ -561,5 +567,6 @@ for (const [name, t] of Object.entries(THEMES)) {
   files.push([`logo-${name}.svg`, logo(t, { withBg: false })])
   files.push([`logo-${name}-tile.svg`, logo(t, { withBg: true })])
 }
+files.push(['social-preview.svg', header(THEMES.dark, { social: true })])
 for (const [file, svg] of files) writeFileSync(join(OUT, file), svg)
 console.log(`${files.length} Dateien nach assets/ geschrieben`)
